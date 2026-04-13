@@ -368,9 +368,7 @@ def polacz_ssh_ze_switchem_z_cisco(shell, ip, uzytkownik, haslo, hostname_cpe, t
     return False, None, "Nieoczekiwany blad"
 
 
-# =============================================================================
 # GLOWNE PROCESY
-# =============================================================================
 
 def uruchom_proces_huawei():
     print("\n" + "="*60)
@@ -535,9 +533,9 @@ def uruchom_proces_cisco():
     adres_ip = input("\n\tWpisz IP CPE: ")
     uzytkownik = input("\tWpisz swoj user radius: ")
     haslo = getpass.getpass("\tWpisz haslo radius: ")
-    ostatni_oktet = input("\tWpisz ostatni oktet do IP SW (np. 21): ")
+    ostatni_oktet = input("\tWpisz ostatni oktet do IP SW: ")
     
-    numer_vlan = input("\tWpisz numer VLAN do testu (np. 500, 510, 550): ").strip()
+    numer_vlan = input("\tWpisz numer VLAN do testu (np. 100, 110, 150): ").strip()
     if not numer_vlan.isdigit():
         wyswietl_status("Nieprawidlowy numer VLAN", "blad")
         return
@@ -661,9 +659,7 @@ def uruchom_proces_cisco():
     klient.close()
 
 
-# =============================================================================
 # PUNKT WEJSCIA
-# =============================================================================
 
 if __name__ == "__main__":
     print("\n" + "="*60)
