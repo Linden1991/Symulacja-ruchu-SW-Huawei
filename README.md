@@ -26,7 +26,7 @@ a następnie automatycznie przywraca pierwotną konfigurację.
 
 ## Użycie
 
-python Symulacja_DATA_v6.py
+python Symulacja_VLAN.py
 
 Skrypt interaktywnie pyta o:
 - IP urządzenia CPE
