@@ -374,7 +374,7 @@ def polacz_ssh_ze_switchem_z_cisco(shell, ip, uzytkownik, haslo, hostname_cpe, t
 
 def uruchom_proces_huawei():
     print("\n" + "="*60)
-    print("  Program do symulacji ruchu DATA na SW (Huawei CPE)")
+    print("  Program do symulacji ruchu na SW (Huawei CPE)")
     print("="*60)
 
     adres_ip = input("\n\tWpisz IP CPE: ")
@@ -529,7 +529,7 @@ def uruchom_proces_huawei():
 
 def uruchom_proces_cisco():
     print("\n" + "="*60)
-    print("  Program do symulacji ruchu DATA na SW (Cisco CPE)")
+    print("  Program do symulacji ruchu VLAN na SW (Cisco CPE)")
     print("="*60)
 
     adres_ip = input("\n\tWpisz IP CPE: ")
@@ -667,7 +667,7 @@ def uruchom_proces_cisco():
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("  SYMULACJA RUCHU DATA - WERSJA BEZPIECZNA v6")
+    print("  SYMULACJA RUCHU VLAN")
     print("="*60)
     print("\nZabezpieczenia:")
     print("  - Porownanie hostname CPE vs Switch")
